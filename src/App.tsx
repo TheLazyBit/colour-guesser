@@ -4,7 +4,7 @@ import './App.scss';
 const colourRange = 256 ** 3;
 function getRandomColour() {
   const colour = Math.floor(Math.random() * colourRange);
-  return `#${colour.toString(16)}`;
+  return `#${colour.toString(16).padStart(6, '0')}`;
 }
 
 function App() {
